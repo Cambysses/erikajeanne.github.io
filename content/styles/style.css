@@ -116,7 +116,6 @@ hr {
 }
 
 .theater img {
-    width: 80%;
     object-fit: cover;
     background-color: white;;
     padding: 1rem;
