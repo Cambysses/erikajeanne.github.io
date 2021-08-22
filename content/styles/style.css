@@ -51,12 +51,14 @@ img {
 }
 
 footer {
-    font-size: 18px;
+
     font-family: opensans;
     text-align: center;
 }
 
 hr {
+    margin-left: 25%;
+    margin-right: 25%;
     background-color: lightgrey;
     margin-top: 50px;
 }
@@ -195,6 +197,7 @@ hr {
         max-width: 100%;
         width: 100%;
         padding: 0;
+        margin-bottom: 25px;
     }
 
     header {
@@ -204,6 +207,14 @@ hr {
     h1 {
         font-size: 5vw;
         margin-left: 10px;
+    }
+
+    hr {
+        margin: 0;
+    }
+
+    footer {
+        font-size: 1vw;
     }
 
     .about {
