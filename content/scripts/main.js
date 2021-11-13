@@ -7,6 +7,14 @@ function navigateTo(url) {
 
 $().ready(function (e) {
 
+    // Load header and footer.
+    $.get("header.html", function (data) {
+        $("body").prepend(data);
+    });
+    $.get("footer.html", function (data) {
+        $("body").append(data);
+    });
+
     // Fade site in.
     $("html").fadeIn(300);
 
