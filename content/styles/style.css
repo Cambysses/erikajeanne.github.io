@@ -17,6 +17,7 @@ a {
     color: #88B2F2;
     text-decoration: none;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 a:hover {
@@ -186,6 +187,7 @@ hr {
 }
 
 .about img {
+    max-width: 600px;
     display: block;
     margin: 0 auto;
 }
@@ -222,6 +224,7 @@ hr {
     }
 
     .faq img {
+        max-width: 100%;
         width: 100%;
     }
 
