@@ -21,7 +21,7 @@ $().ready(function (e) {
     $.get("footer.html", function (data) {
         $("body").append(data);
     });
-
+    
     // Fade site in.
     $("html").fadeIn(300);
 
@@ -29,14 +29,14 @@ $().ready(function (e) {
     $(".gallery-item").each(function () {
         $(this).click(function () {
 
-            let img = $(this).children('img').eq(0);
-            img.addClass("no-hover")
+            let selectedImage = $(this).children('img').eq(0);
+            selectedImage.addClass("no-hover")
 
-            $(".theater").children('img').eq(0).attr("src", img.attr("src"));
+            $("#featured").attr("src", selectedImage.attr("src"));
             $(".theater").fadeIn();
 
             $(".theater").click(function () {
-                img.removeClass("no-hover")
+                selectedImage.removeClass("no-hover")
                 $(this).fadeOut();
             });
         });
