@@ -119,6 +119,7 @@ hr {
 }
 
 .theater img {
+    max-width: 75%;
     object-fit: cover;
     background-color: white;;
     padding: 1rem;
