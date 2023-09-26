@@ -137,6 +137,14 @@ hr {
     padding: 0 2rem;
 }
 
+.wide-image {
+    padding: 0.5rem;
+}
+
+.wide-image img {
+    width: 100%;
+}
+
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -189,6 +197,18 @@ hr {
     max-width: 600px;
     display: block;
     margin: 0 auto;
+}
+
+.blog {
+    font-family: opensans;
+    font-weight: bold;
+    font-size: 20px;
+    color: #88B2F2;
+    text-align: center;
+}
+
+.cutie {
+    color: #FFA3A3;
 }
 
 @media screen and (max-width: 992px) {
