@@ -1,5 +1,14 @@
-RewriteEngine on
+RewriteEngine On
+
+# Ensure all characters in the requested URL are treated as lowercase
+RewriteMap lc int:tolower
+RewriteCond %{REQUEST_URI} [A-Z]
+RewriteRule (.*) ${lc:$1} [R=301,L]
+
+# Remove .html extension from the request
 RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
-RewriteRule ^ /%1 [NC,L,R]
+RewriteRule ^ /%1 [R,L]
+
+# Append .html extension internally if the corresponding .html file exists
 RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^ %{REQUEST_URI}.html [NC,L]
+RewriteRule ^ %{REQUEST_URI}.html [L]
