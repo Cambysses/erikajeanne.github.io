@@ -62,16 +62,6 @@ nav {
     max-width: 1200px;
 }
 
-.gallery-image {
-    transition: 0.2s;
-}
-
-.gallery-image:hover {
-    filter: brightness(40%);
-    cursor: pointer;
-    transition: 0.2s;
-}
-
 .theater-image {
     max-width: 100%;
 }
@@ -100,3 +90,17 @@ nav {
         max-width: 800px;
     }
 }
+
+@media (min-width: 576px) {
+    .gallery-image {
+        transition: 0.2s;
+    }
+
+    .gallery-image:hover {
+        filter: brightness(40%);
+        cursor: pointer;
+        transition: 0.2s;
+    }
+}
+
+
