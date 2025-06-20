@@ -1,0 +1,97 @@
+:root {
+    /* bootstrap overrides */
+    --bs-light-rgb: 255, 255, 255;
+
+    /* custom vars */
+    --primary-accent-color: #ffa3a3;
+    --secondary-accent-color: #88b2f2;
+}
+
+@font-face {
+    font-family: lulo;
+    src: url("/assets/fonts/lulo-llean-w01-one-bold.ttf");
+}
+
+@font-face {
+    font-family: opensans;
+    src: url("/assets/fonts/opensans-regular.ttf");
+}
+
+body {
+    background-image: url("/assets/images/site/pink.png");
+    background-size: 100px;
+}
+
+nav {
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.navbar-brand, 
+.navbar-brand:hover,
+.navbar-brand:active,
+.navbar-brand:focus {
+    font-family: lulo;
+    color: var(--primary-accent-color);
+}
+
+.nav-link, .active {
+    color: var(--secondary-accent-color) !important;
+}
+
+.nav-link.active {
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: var(--primary-accent-color) !important;
+    transition: 0.3s;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler i {
+    font-weight: bold !important;
+    font-size: 2.5em;
+    color: var(--primary-accent-color);
+}
+
+.container-fluid {
+    max-width: 1200px;
+}
+
+.gallery-image:hover {
+    filter: brightness(40%);
+    cursor: pointer;
+}
+
+.theater-image {
+    max-width: 100%;
+}
+
+.footer a {
+        color: var(--secondary-accent-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: var(--primary-accent-color) !important;
+    transition: 0.3s;
+}
+
+#logo {
+    max-height: 2.5em;
+}
+
+#subtitle {
+    font-family: opensans;
+}
+
+@media (min-width: 1200px) {
+    .container{
+        max-width: 800px;
+    }
+}
