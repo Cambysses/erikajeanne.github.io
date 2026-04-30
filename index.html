@@ -14,15 +14,13 @@
     <div class="container-fluid">
         <nav class="navbar navbar-expand-md mt-2 d-flex align-items-center bg-light shadow">
             <div class="container-fluid">
-                <a class="navbar-brand d-flex align-items-center  fs-3" href="#">
+                <a class="navbar-brand d-flex align-items-center  fs-3" href="/">
                     <img src="/assets/images/site/logo.webp" id="logo" class="d-none d-sm-flex">
                     <div class="d-flex flex-column">
                         <span class="fs-5">
                             Erika Jeanne
                         </span>
-                        <span id="subtitle" class="fs-6 fst-italic align-self-center">
-                            Tattoos & Illustration
-                        </span>
+
                     </div>
                 </a>
                 <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,10 +29,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto fs-4 align-items-center">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Gallery</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://form.jotform.com/242564033411244" target="_blank">Book</a>
+                            <a class="nav-link active" href="/">Gallery</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="https://erikajeanne.square.site/" target="_blank">Shop</a>
@@ -68,7 +63,6 @@
                 <img src="/assets/images/tattoos/hot_dog_car.jpg" class="img-fluid gallery-image rounded shadow bg-light  mb-2 p-2" />
                 <img src="/assets/images/art/house.jpg" class="img-fluid gallery-image rounded shadow bg-light  mb-2 p-2" />
                 <img src="/assets/images/tattoos/cupid_cat.jpg" class="img-fluid gallery-image rounded shadow bg-light   p-2" />
-
             </div>
         </div>
 
@@ -85,29 +79,11 @@
         </div>
 
     </div>
+    <script src="assets/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            let logo = document.querySelector("#logo");
-            document.querySelector(".navbar-brand").addEventListener("mouseover", function () {
-                logo.src = "/assets/images/site/logo_winky.webp";
-            });
-            document.querySelector(".navbar-brand").addEventListener("mouseout", function () {
-                logo.src = "/assets/images/site/logo.webp";
-            });
-
-            document.querySelectorAll('.gallery-image').forEach(function (img) {
-                img.addEventListener('click', function () {
-                    let modalImage = document.querySelector('#theaterModal .theater-image');
-                    modalImage.src = this.src;
-                    let modal = new bootstrap.Modal(document.getElementById('theaterModal'));
-                    modal.show();
-                });
-            });
-
-            // Initialize bootstrap tooltips
-            const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-            const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+            initializeSite();
         });
     </script>
 </body>

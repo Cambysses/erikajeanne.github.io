@@ -4,7 +4,7 @@
 
     /* custom vars */
     --primary-accent-color: #ffa3a3;
-    --secondary-accent-color: #88b2f2;
+    --secondary-accent-color: #6092db;
 }
 
 @font-face {
@@ -60,6 +60,26 @@ nav {
 
 .container-fluid {
     max-width: 1200px;
+}
+
+.merch-section {
+    margin-top: 5em;
+}
+
+.section-header {
+    font-family: opensans;
+    color: var(--secondary-accent-color);
+}
+
+.blog {
+    font-family: opensans;
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--secondary-accent-color);
+}
+
+.cutie {
+    color: #FFA3A3;
 }
 
 .gallery-image:hover {

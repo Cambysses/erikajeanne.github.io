@@ -1,0 +1,5 @@
+- top blurb
+- photo of erika at table
+- multiple sections (stickers, sticker packs, sticker sheets, prints, keychains, tote bags) dats all she got
+- each section starts with its own header + blurb
+- followed by pictures
