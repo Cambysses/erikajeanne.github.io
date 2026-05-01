@@ -82,10 +82,7 @@ nav {
     color: #FFA3A3;
 }
 
-.gallery-image:hover {
-    filter: brightness(40%);
-    cursor: pointer;
-}
+
 
 .theater-image {
     max-width: 100%;
@@ -115,3 +112,11 @@ nav {
         max-width: 800px;
     }
 }
+
+@media (min-width: 768px) {
+    .gallery-image:hover {
+        filter: brightness(40%);
+        cursor: pointer;
+    }
+}
+

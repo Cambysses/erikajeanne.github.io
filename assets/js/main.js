@@ -9,6 +9,9 @@ function initializeSite() {
 
     document.querySelectorAll('.gallery-image').forEach(function (img) {
         img.addEventListener('click', function () {
+
+            if (window.innerWidth < 768) return; // ignore on small screens
+
             let modalImage = document.querySelector('#theaterModal .theater-image');
             modalImage.src = this.src;
             let modal = new bootstrap.Modal(document.getElementById('theaterModal'));
